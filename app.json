@@ -1,0 +1,15 @@
+{
+  "cron": [
+    { "schedule":  "0 * * * *", "command": "python captura_dados.py" }
+  ],
+  "healthchecks": {
+    "web": [
+      {
+        "type": "startup",
+        "name": "web home check",
+        "description": "Check /",
+        "path": "/"
+      }
+    ]
+  }
+}
